@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="web1.css" />
+    </head>
+    <body>
+        <header>
+            <h1> The Valley Dawgs </h1>
+            <img src="img/Zombie_ValleyDawgs.svg"
+                alt="Valley Dawgs Emblem">
+        </header>
+        <nav>
+            <ul id="links_questionairepage">
+                <li> <a href="Index.html"> Main page </a></li>
+                <li> <a href="StatsVD.html"> Player stats </a></li>
+                <li> <a href="https://www.espn.com/fantasy/mens-basketball/"> ESPN Fantasy</a></li>
+            </ul>
+            <div id="footer_questionairepage">
+                <a href="FormularioVD.html"> Back to top </a>
+            </div>
+        </nav>
+        <form action="/some-url" method="post">
+            <section class="formulario" id="personal">
+                <h3> About you...</h3>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="country">Country:</label>
+                    <select name="country" id="country">
+                        <option value="spain">Spain</option>
+                        <option value="france">France</option>
+                        <option value="germany">Germany</option>
+                        <option value="italy">Italy</option>
+                        <option value="belgium">Belgium</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="usa">U.S.A</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </section>
+            <section class="formulario" id="general-baloncesto">
+                <h3> About basketball... </h3>
+                <label for="total-players">How many players on the court for each team?</label>
+                <input type="number" id="total-players">
+
+                <label for="3pt-line-europe">At what distance is the european 3pt line?</label>
+                <input type="number" id="3pt-line-europe">
+
+                <label for="hoop-diameter">What´s the diameter of the hoop?</label>
+                <input type="number" id="hoop-diameter">
+                
+            </section>
+            <section class="formulario" id="nba">
+                <h3> About the NBA... </h3>
+                <div>
+                    <label for="fav-player">Who´s your favorite player?</label>
+                    <input type="text" id="fav-player">
+                </div>
+                <br>
+                <div>
+                    <label for="fav-legend">Who´s your favorite NBA legend?: </label>
+                    <input type="text" id="fav-legend">
+                </div>
+                <br>
+                <div>
+                    <label for="min-number">What is the lowest number you can use on your jersey? </label>
+                    <input type="text" id="min-number">
+                </div>
+                <br>
+                <div>
+                    <label for="max-number">What is the highest number you can use on your jersey? </label>
+                    <input type="text" id="min-number">
+                </div>
+                <br>
+                <div id="nba-questions">
+                    <div>
+                        <label for="recognize-names">Which of the following names do you recognize as NBA legends?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="recognize-names" value="Kobe Bryant"/> Kobe Bryant
+                    </div>
+                    <div>
+                        <input type="checkbox" name="recognize-names" value="Dirk Nowitzki"/> Dirk Nowitzki
+                    </div>
+                    <div>
+                        <input type="checkbox" name="recognize-names" value="Pau Gasol"/> Pau Gasol
+                    </div>
+                    <div>
+                        <input type="checkbox" name="recognize-names" value="Aitor Tilla"/> Aitor Tilla
+                    </div>
+                    <div>
+                        <input type="checkbox" name="recognize-names" value="Kevin Garnett"/> Kevin Garnett
+                    </div>
+                    <div>
+                        <input type="checkbox" name="recognize-names" value="Shaquille Oneal"/> Shaquille O´neal
+                    </div>
+                    <div>
+                        <input type="checkbox" name="recognize-names" value="Buddy Hield"/> Buddy Hield
+                    </div>
+                    <div>
+                        <input type="checkbox" name="recognize-names" value="Rudy Fdez"/> Rudy Fdez
+                    </div>
+                </div>
+            </section>
+            <section class="formulario" id="enviar">
+                <button type="submit"> Send </button>
+            </section>
+          </form>
+    </body>
+</html>
